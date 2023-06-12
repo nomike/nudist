@@ -42,6 +42,7 @@
       - python3-venv
       - sl
       - socat
+      - solaar
       - tcpdump
       - thefuck
       - tig
@@ -60,6 +61,14 @@
 
 - name: "Install snap packages"
   community.general.snap:
-    name: fast
+    name:
+      - fast
     state: present
+
+- name: "Install classic snap packages"
+  community.general.snap:
+    name:
+      - code-insiders
+    state: present
+    classic: true
 
