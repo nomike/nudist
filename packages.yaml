@@ -1,0 +1,65 @@
+---
+- name: "packages: apt update"
+  apt:
+    cache_valid_time: 86400
+    update_cache: true
+
+- name: "packages: install apt packages"
+  apt:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+      - ansible
+      - build-essential
+      - curl
+      - daemonize
+      - diffstat
+      - diffutils
+      - dos2unix
+      - feh
+      - fonts-powerline
+      - gdb
+      - git
+      - gitk
+      - gnome-tweaks
+      - graphicsmagick-imagemagick-compat
+      - htop
+      - ipython3
+      - jq
+      - jupp
+      - landscape-common
+      - mc
+      - ncdu
+      - net-tools
+      - nmap
+      - npm
+      - openssh-server
+      - p7zip-full
+      - pwgen
+      - python3-autopep8
+      - python3-pip
+      - python3-venv
+      - sl
+      - socat
+      - tcpdump
+      - thefuck
+      - tig
+      - unzip
+      - wget
+      - whois
+      - yamllint
+      - zsh
+      - zsh-antigen
+
+- name: "packages: install npm packages"
+  npm:
+    name: "git-removed-branches"
+    state: present
+    global: yes
+
+- name: "Install snap packages"
+  community.general.snap:
+    name: fast
+    state: present
+
