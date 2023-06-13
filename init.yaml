@@ -7,3 +7,7 @@
   tasks:
     - name: packages
       include_tasks: packages.yaml
+
+  tasks:
+    - name: keepass2
+      include_tasks: keepass2/index.yaml

@@ -1,0 +1,16 @@
+- name: "packages: install apt packages"
+  apt:
+    name: keepass2
+    state: present
+
+- name: "keepass2: plugins: KeeOtp2"
+  copy:
+    dest: /usr/lib/keepass2/Plugins/KeeOtp2.plgx
+    src: resources/keepass2/Plugins/KeeOtp2.plgx
+    mode: 0755
+
+- name: "keepass2: plugins: KeePassRPC"
+  copy:
+    dest: /usr/lib/keepass2/Plugins/KeePassRPC.plgx
+    src: resources/keepass2/Plugins/KeePassRPC.plgx
+    mode: 0755

@@ -28,8 +28,10 @@
       - ipython3
       - jq
       - jupp
+      - keepass2
       - landscape-common
       - mc
+      - mono-complete
       - ncdu
       - net-tools
       - nmap
