@@ -20,11 +20,13 @@
       - feh
       - fonts-powerline
       - gdb
+      - gimp
       - git
       - gitk
       - gnome-tweaks
       - graphicsmagick-imagemagick-compat
       - htop
+      - inkscape
       - ipython3
       - jq
       - jupp
