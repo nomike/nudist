@@ -71,6 +71,7 @@
     name:
       - chromium
       - fast
+      - youtube-music-desktop-app
     state: present
 
 - name: "Install classic snap packages"
