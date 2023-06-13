@@ -72,6 +72,7 @@
       - chromium
       - fast
       - youtube-music-desktop-app
+      - ferdium
     state: present
 
 - name: "Install classic snap packages"
