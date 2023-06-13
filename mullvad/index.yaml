@@ -1,0 +1,5 @@
+---
+- name: "mullvad: Install client"
+  apt:
+    deb: "https://mullvad.net/de/download/app/deb/latest"
+    state: present

@@ -11,3 +11,7 @@
   tasks:
     - name: keepass2
       include_tasks: keepass2/index.yaml
+
+  tasks:
+    - name: mullvad
+      include_tasks: mullvad/index.yaml
