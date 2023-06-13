@@ -69,8 +69,8 @@
 - name: "Install snap packages"
   community.general.snap:
     name:
-      - fast
       - chromium
+      - fast
     state: present
 
 - name: "Install classic snap packages"
