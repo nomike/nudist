@@ -49,6 +49,7 @@
       - thefuck
       - tig
       - unzip
+      - vlc-bin
       - wget
       - whois
       - yamllint
