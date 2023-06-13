@@ -11,6 +11,7 @@
   vars:
     packages:
       - ansible
+      - ansible-lint
       - build-essential
       - curl
       - daemonize
