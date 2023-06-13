@@ -68,6 +68,7 @@
   community.general.snap:
     name:
       - fast
+      - chromium
     state: present
 
 - name: "Install classic snap packages"
