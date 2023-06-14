@@ -52,7 +52,6 @@
       - thefuck
       - tig
       - unzip
-      - vlc-bin
       - wget
       - whois
       - yamllint
@@ -73,6 +72,8 @@
       - fast
       - youtube-music-desktop-app
       - ferdium
+      - signal-desktop
+      - vlc
     state: present
 
 - name: "Install classic snap packages"
