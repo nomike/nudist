@@ -41,6 +41,7 @@
       - npm
       - openssh-server
       - p7zip-full
+      - plocate
       - pwgen
       - python3-autopep8
       - python3-pip
