@@ -55,6 +55,7 @@
       - unzip
       - vlc
       - wget
+      - wireshark
       - whois
       - yamllint
       - yt-dlp
