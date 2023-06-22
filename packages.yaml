@@ -57,6 +57,7 @@
       - wget
       - wireshark
       - whois
+      - xclip
       - yamllint
       - yt-dlp
       - zsh
