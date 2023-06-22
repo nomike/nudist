@@ -1,0 +1,5 @@
+---
+- name: "vlc: Install vlsub"
+  copy:
+    dest: "/usr/lib/x86_64-linux-gnu/vlc/lua/extensions/VLSub.luac"
+    src: "resources/VLSub.luac"

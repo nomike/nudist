@@ -11,5 +11,8 @@
     - name: keepass2
       include_tasks: keepass2/index.yaml
 
+    - name: "vlc"
+      include_tasks: vlc.yaml
+      
     # - name: mullvad
     #   include_tasks: mullvad/index.yaml
