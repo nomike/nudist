@@ -24,6 +24,7 @@
       - gimp
       - git
       - gitk
+      - gnome-shell-extension-manager
       - gnome-tweaks
       - graphicsmagick-imagemagick-compat
       - htop
@@ -77,6 +78,7 @@
       - youtube-music-desktop-app
       - ferdium
       - signal-desktop
+      - telegram-desktop
     state: present
 
 - name: "Install classic snap packages"
