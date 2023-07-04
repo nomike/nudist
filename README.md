@@ -1,4 +1,5 @@
 NUDIST - nomike's Ubuntu Desktop initial setup tool
+
 (C) 2023 - nomike <nomike [at] nomike [dot] com>
 
 An ansible script which configures my personal ubuntu destkop.
