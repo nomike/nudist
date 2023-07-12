@@ -80,6 +80,7 @@
       - youtube-music-desktop-app
       - ferdium
       - signal-desktop
+      - teams-for-linux
       - telegram-desktop
     state: present
 
