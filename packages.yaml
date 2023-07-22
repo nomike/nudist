@@ -19,6 +19,7 @@
       - diffutils
       - dos2unix
       - feh
+      - finger
       - fonts-powerline
       - gdb
       - gimp
