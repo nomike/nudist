@@ -67,9 +67,15 @@
       - zsh
       - zsh-antigen
 
-- name: "packages: install npm packages"
+- name: "packages: install git-removed-branches"
   npm:
-    name: "git-removed-branches"
+    name: git-removed-branches
+    state: present
+    global: yes
+
+- name: "packages: install yarn"
+  npm:
+    name: yarn
     state: present
     global: yes
 
