@@ -29,7 +29,7 @@
       - gitk
       - gnome-shell-extension-manager
       - gnome-tweaks
-      = gparted
+      - gparted
       - graphicsmagick-imagemagick-compat
       - htop
       - inkscape
