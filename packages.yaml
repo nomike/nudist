@@ -18,6 +18,8 @@
       - diffstat
       - diffutils
       - dos2unix
+      - dotnet-sdk-6.0
+      - dotnet-sdk-7.0
       - feh
       - finger
       - fonts-powerline
