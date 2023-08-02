@@ -33,6 +33,7 @@
       - gnome-tweaks
       - gparted
       - graphicsmagick-imagemagick-compat
+      - guake
       - htop
       - inkscape
       - ipython3
