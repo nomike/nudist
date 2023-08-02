@@ -28,6 +28,7 @@
       - gimp
       - git
       - gitk
+      - gnome-browser-connector
       - gnome-shell-extension-manager
       - gnome-tweaks
       - gparted
