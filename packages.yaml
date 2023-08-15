@@ -41,6 +41,7 @@
       - jupp
       - keepass2
       - landscape-common
+      - libfuse2
       - mc
       - mono-complete
       - ncdu
