@@ -15,6 +15,7 @@
       - build-essential
       - curl
       - daemonize
+      - dconf-editor
       - diffstat
       - diffutils
       - dos2unix
