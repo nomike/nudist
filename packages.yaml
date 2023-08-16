@@ -48,6 +48,7 @@
       - net-tools
       - nmap
       - npm
+      - openscad
       - openshot-qt
       - openssh-server
       - p7zip-full
