@@ -1,5 +1,15 @@
 ---
-- name: "packages: apt update"
+- name: "Install element.io GPG key"
+  apt_key:
+    url: https://packages.element.io/debian/element-io-archive-keyring.gpg
+    state: present
+
+- name: "Install element.io apt repository"
+  apt_repository:
+    repo: deb https://packages.element.io/debian default main
+    state: present
+
+- name: "Apt update"
   apt:
     cache_valid_time: 86400
     update_cache: true
@@ -12,6 +22,7 @@
     packages:
       - ansible
       - ansible-lint
+      - apt-transport-https
       - build-essential
       - cabextract
       - curl
@@ -22,6 +33,7 @@
       - dos2unix
       - dotnet-sdk-6.0
       - dotnet-sdk-7.0
+      - element-desktop
       - feh
       - finger
       - fonts-powerline
