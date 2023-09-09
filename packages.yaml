@@ -56,12 +56,17 @@
       - keepass2
       - landscape-common
       - libfuse2
+      - libreoffice-java-common
       - mc
       - mono-complete
       - ncdu
       - net-tools
       - nmap
       - npm
+      - openjdk-11-jdk
+      - openjdk-11-jre
+      - openjdk-17-jdk
+      - openjdk-17-jre
       - openscad
       - openshot-qt
       - openssh-server
