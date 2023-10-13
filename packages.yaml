@@ -81,6 +81,7 @@
       - sl
       - socat
       - solaar
+      - ssh-askpass-gnome
       - syncthing
       - tcpdump
       - thefuck
