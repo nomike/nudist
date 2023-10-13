@@ -89,6 +89,7 @@
       - unzip
       - virt-manager
       - vlc
+      - vorta
       - wget
       - wireshark
       - whois
