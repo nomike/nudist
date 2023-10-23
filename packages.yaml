@@ -25,6 +25,7 @@
       - apt-transport-https
       - build-essential
       - cabextract
+      - clang-format
       - curl
       - daemonize
       - dconf-editor
