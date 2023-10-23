@@ -120,6 +120,7 @@
       - fast
       - youtube-music-desktop-app
       - ferdium
+      - rustup
       - signal-desktop
       - teams-for-linux
       - telegram-desktop
