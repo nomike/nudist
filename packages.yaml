@@ -79,6 +79,7 @@
       - python3-pip
       - python3-venv
       - sl
+      - smartmontools
       - socat
       - solaar
       - ssh-askpass-gnome
