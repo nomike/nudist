@@ -119,7 +119,6 @@
       - docker
       - fast
       - ferdium
-      - rustup
       - signal-desktop
       - teams-for-linux
       - telegram-desktop
@@ -130,6 +129,7 @@
   community.general.snap:
     name:
       - code-insiders
+      - rustup
     state: present
     classic: true
 
