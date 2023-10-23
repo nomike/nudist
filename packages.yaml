@@ -118,12 +118,12 @@
       - chromium
       - docker
       - fast
-      - youtube-music-desktop-app
       - ferdium
       - rustup
       - signal-desktop
       - teams-for-linux
       - telegram-desktop
+      - youtube-music-desktop-app
     state: present
 
 - name: "Install classic snap packages"
