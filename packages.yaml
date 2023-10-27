@@ -38,6 +38,7 @@
       - element-desktop
       - feh
       - finger
+      - fonts-liberation
       - fonts-powerline
       - gdb
       - gddrescue
