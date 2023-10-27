@@ -88,6 +88,7 @@
       - tcpdump
       - thefuck
       - tig
+      - ttf-mscorefonts-installer
       - unzip
       - virt-manager
       - vlc
