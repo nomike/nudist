@@ -23,6 +23,7 @@
       - ansible
       - ansible-lint
       - apt-transport-https
+      - audacity
       - build-essential
       - cabextract
       - clang-format
