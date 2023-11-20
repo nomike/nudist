@@ -27,6 +27,7 @@
       - build-essential
       - cabextract
       - clang-format
+      - cmake
       - curl
       - daemonize
       - dconf-editor
