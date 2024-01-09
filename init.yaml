@@ -14,5 +14,7 @@
     - name: Vlc
       ansible.core.include_tasks: vlc.yaml
 
+    - name: Deconz
+      ansible.core.include_tasks: deconz.yaml
     # - name: mullvad
     #   include_tasks: mullvad/index.yaml

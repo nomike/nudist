@@ -1,0 +1,19 @@
+---
+- name: "conbee: gpg key"
+  apt_key:
+    url: https://phoscon.de/apt/deconz.pub.key
+    state: present
+- name: "conbee: apt repository"
+  apt_repository:
+    repo: deb http://phoscon.de/apt/deconz $(lsb_release -cs) main
+    state: present
+
+- name: "conbee: apt update"
+  apt:
+    cache_valid_time: 86400
+    update_cache: true
+
+- name: "conbee: install apt packages"
+  apt:
+    name: "deconz"
+    state: present
