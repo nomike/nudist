@@ -1,18 +1,18 @@
 ---
 - hosts: localhost
   connection: local
-  become: yes
+  become: true
   become_method: sudo
 
   tasks:
-    - name: packages
-      include_tasks: packages.yaml
+    - name: Packages
+      ansible.core.include_tasks: packages.yaml
 
-    - name: keepass2
-      include_tasks: keepass2/index.yaml
+    - name: Keepass2
+      ansible.core.include_tasksinclude_tasks: keepass2/index.yaml
 
-    - name: "vlc"
-      include_tasks: vlc.yaml
-      
+    - name: Vlc
+      ansible.core.include_tasksinclude_tasks: vlc.yaml
+
     # - name: mullvad
     #   include_tasks: mullvad/index.yaml

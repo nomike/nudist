@@ -112,13 +112,13 @@
   npm:
     name: git-removed-branches
     state: present
-    global: yes
+    global: true
 
 - name: "packages: install yarn"
   npm:
     name: yarn
     state: present
-    global: yes
+    global: true
 
 - name: "Install snap packages"
   community.general.snap:
@@ -140,4 +140,3 @@
       - rustup
     state: present
     classic: true
-
