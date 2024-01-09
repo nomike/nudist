@@ -51,6 +51,7 @@
       - gnome-browser-connector
       - gnome-shell-extension-manager
       - gnome-tweaks
+      - gnome-weather
       - gparted
       - graphicsmagick-imagemagick-compat
       - guake
