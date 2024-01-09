@@ -9,10 +9,10 @@
       ansible.core.include_tasks: packages.yaml
 
     - name: Keepass2
-      ansible.core.include_tasksinclude_tasks: keepass2/index.yaml
+      ansible.core.include_tasks: keepass2/index.yaml
 
     - name: Vlc
-      ansible.core.include_tasksinclude_tasks: vlc.yaml
+      ansible.core.include_tasks: vlc.yaml
 
     # - name: mullvad
     #   include_tasks: mullvad/index.yaml
