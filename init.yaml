@@ -1,20 +1,21 @@
 ---
-- hosts: localhost
+- name: Nomike's Unbuntu Desktop InSTaller
+  hosts: localhost
   connection: local
   become: true
   become_method: sudo
 
   tasks:
     - name: Packages
-      ansible.core.include_tasks: packages.yaml
+      ansible.builtin.include_tasks: packages.yaml
 
     - name: Keepass2
-      ansible.core.include_tasks: keepass2/index.yaml
+      ansible.builtin.include_tasks: keepass2/index.yaml
 
     - name: Vlc
-      ansible.core.include_tasks: vlc.yaml
+      ansible.builtin.include_tasks: vlc.yaml
 
     - name: Deconz
-      ansible.core.include_tasks: deconz.yaml
+      ansible.builtin.include_tasks: deconz.yaml
     # - name: mullvad
-    #   include_tasks: mullvad/index.yaml
+    #   ansible.builtin.include_tasks: mullvad/index.yaml
