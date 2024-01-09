@@ -1,21 +1,21 @@
 ---
-- name: "Install element.io GPG key"
-  apt_key:
+- name: "Packages: Install element.io GPG key"
+  ansible.builtin.apt_key:
     url: https://packages.element.io/debian/element-io-archive-keyring.gpg
     state: present
 
-- name: "Install element.io apt repository"
-  apt_repository:
+- name: "Packages: Install element.io apt repository"
+  ansible.builtin.apt_repository:
     repo: deb https://packages.element.io/debian default main
     state: present
 
-- name: "Apt update"
-  apt:
+- name: "Packages: Apt update"
+  ansible.builtin.apt:
     cache_valid_time: 86400
     update_cache: true
 
-- name: "packages: install apt packages"
-  apt:
+- name: "Packages: install apt packages"
+  ansible.builtin.apt:
     name: "{{ packages }}"
     state: present
   vars:
@@ -108,19 +108,19 @@
       - zsh
       - zsh-antigen
 
-- name: "packages: install git-removed-branches"
-  npm:
+- name: "Packages: install git-removed-branches"
+  community.general.npm:
     name: git-removed-branches
     state: present
     global: true
 
-- name: "packages: install yarn"
-  npm:
+- name: "Packages: install yarn"
+  community.general.npm:
     name: yarn
     state: present
     global: true
 
-- name: "Install snap packages"
+- name: "Packages: Install snap packages"
   community.general.snap:
     name:
       - chromium
@@ -133,7 +133,7 @@
       - youtube-music-desktop-app
     state: present
 
-- name: "Install classic snap packages"
+- name: "Packages: Install classic snap packages"
   community.general.snap:
     name:
       - code-insiders

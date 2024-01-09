@@ -1,16 +1,16 @@
-- name: "packages: install apt packages"
-  apt:
+- name: "Keepass2: install apt packages"
+  ansible.builtin.apt:
     name: keepass2
     state: present
 
-- name: "keepass2: plugins: KeeOtp2"
-  copy:
+- name: "Keepass2: plugins: KeeOtp2"
+  ansible.builtin.copy:
     dest: /usr/lib/keepass2/Plugins/KeeOtp2.plgx
     src: resources/keepass2/Plugins/KeeOtp2.plgx
     mode: "0755"
 
-- name: "keepass2: plugins: KeePassRPC"
-  copy:
+- name: "Keepass2: plugins: KeePassRPC"
+  ansible.builtin.copy:
     dest: /usr/lib/keepass2/Plugins/KeePassRPC.plgx
     src: resources/keepass2/Plugins/KeePassRPC.plgx
     mode: "0755"

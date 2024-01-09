@@ -1,19 +1,20 @@
 ---
-- name: "conbee: gpg key"
-  apt_key:
+- name: "Conbee: gpg key"
+  ansible.builtin.apt_key:
     url: https://phoscon.de/apt/deconz.pub.key
     state: present
-- name: "conbee: apt repository"
-  apt_repository:
+
+- name: "Conbee: apt repository"
+  ansible.builtin.apt_repository:
     repo: deb http://phoscon.de/apt/deconz $(lsb_release -cs) main
     state: present
 
-- name: "conbee: apt update"
-  apt:
+- name: "Conbee: apt update"
+  ansible.builtin.apt:
     cache_valid_time: 86400
     update_cache: true
 
-- name: "conbee: install apt packages"
-  apt:
+- name: "Conbee: install apt packages"
+  ansible.builtin.apt:
     name: "deconz"
     state: present
