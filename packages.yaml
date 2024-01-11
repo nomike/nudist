@@ -52,6 +52,7 @@
       - gnome-shell-extension-manager
       - gnome-tweaks
       - gnome-weather
+      - google-android-platform-tools-installer
       - gparted
       - graphicsmagick-imagemagick-compat
       - guake
