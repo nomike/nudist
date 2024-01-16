@@ -91,6 +91,7 @@
       - smartmontools
       - socat
       - solaar
+      - sox
       - ssh-askpass-gnome
       - syncthing
       - tcpdump
