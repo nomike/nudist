@@ -9,6 +9,9 @@
     - name: Packages
       ansible.builtin.include_tasks: packages.yaml
 
+    - name: gh
+      ansible.builtin.include_tasks: gh.yaml
+
     - name: Keepass2
       ansible.builtin.include_tasks: keepass2/index.yaml
 

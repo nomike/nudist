@@ -1,0 +1,23 @@
+---
+- name: "gh: Install GPG key for githubcli apt repo"
+  ansible.builtin.apt_key:
+    url: https://cli.github.com/packages/githubcli-archive-keyring.gpg
+    state: present
+
+- name: "gh: Install githubcli apt repository"
+  ansible.builtin.apt_repository:
+    repo: deb https://cli.github.com/packages stable main
+    state: present
+
+- name: "gh: Apt update"
+  ansible.builtin.apt:
+    cache_valid_time: 86400
+    update_cache: true
+
+- name: "gh: install apt packages"
+  ansible.builtin.apt:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+      - gh
