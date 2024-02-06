@@ -81,12 +81,14 @@
       - openssh-server
       - p7zip-full
       - pipx
+      - playonlinux
       - plocate
       - pwgen
       - python3-autopep8
       - python3-pip
       - python3-venv
       - python3-virtualenv
+      - qdirstat
       - rpi-imager
       - sl
       - smartmontools
@@ -135,6 +137,7 @@
       - teams-for-linux
       - telegram-desktop
       - youtube-music-desktop-app
+      - yq
     state: present
 
 - name: "Packages: Install classic snap packages"
