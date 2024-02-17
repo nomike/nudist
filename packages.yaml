@@ -85,6 +85,7 @@
       - plocate
       - pwgen
       - python3-autopep8
+      - python3-docopt
       - python3-pip
       - python3-venv
       - python3-virtualenv
