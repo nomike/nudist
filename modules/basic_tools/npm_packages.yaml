@@ -1,0 +1,11 @@
+- name: "Basic tools: install git-removed-branches"
+  community.general.npm:
+    name: git-removed-branches
+    state: present
+    global: true
+
+- name: "Basic tools: install yarn"
+  community.general.npm:
+    name: yarn
+    state: present
+    global: true

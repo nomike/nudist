@@ -1,0 +1,22 @@
+---
+- name: "Basic tools: Install snap packages"
+  community.general.snap:
+    name:
+      - chromium
+      - docker
+      - fast
+      - ferdium
+      - signal-desktop
+      - teams-for-linux
+      - telegram-desktop
+      - youtube-music-desktop-app
+      - yq
+    state: present
+
+- name: "Basic tools: Install classic snap packages"
+  community.general.snap:
+    name:
+      - code-insiders
+      - rustup
+    state: present
+    classic: true

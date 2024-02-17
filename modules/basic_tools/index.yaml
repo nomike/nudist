@@ -1,0 +1,9 @@
+---
+- name: "Basic tools: Apt packages"
+  ansible.builtin.include_tasks: apt_packages.yaml
+
+- name: "Basic tools: Npm packages"
+  ansible.builtin.include_tasks: npm_packages.yaml
+
+- name: "Basic tools: Snap packages"
+  ansible.builtin.include_tasks: snap_packages.yaml

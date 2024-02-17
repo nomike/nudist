@@ -1,6 +1,11 @@
 ---
+- name: "Vlc: Install vlc"
+  ansible.builtin.apt:
+    name: vlc
+    state: present
+
 - name: "Vlc: Install vlsub"
   ansible.builtin.copy:
     dest: "/usr/lib/x86_64-linux-gnu/vlc/lua/extensions/VLSub.luac"
-    src: "resources/VLSub.luac"
+    src: "VLSub.luac"
     mode: "0644"

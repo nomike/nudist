@@ -6,17 +6,7 @@
   become_method: ansible.builtin.sudo
 
   tasks:
-    - name: Packages
-      ansible.builtin.include_tasks: packages.yaml
-
-    - name: gh
-      ansible.builtin.include_tasks: gh.yaml
-
-    - name: Keepass2
-      ansible.builtin.include_tasks: keepass2/index.yaml
-
-    - name: Vlc
-      ansible.builtin.include_tasks: vlc.yaml
-
+    - name: Include node roles
+      ansible.builtin.include_tasks: "roles/{{ ansible_facts.nodename }}.yaml"
     # - name: mullvad
     #   ansible.builtin.include_tasks: mullvad/index.yaml

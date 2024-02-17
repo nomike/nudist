@@ -1,0 +1,7 @@
+---
+- name: "Scrooge: Basic desktop workstation"
+  ansible.builtin.include_tasks: profiles/basic_desktop_workstation.yaml
+
+- name: "Scrooge: Developer workstation"
+  ansible.builtin.include_tasks: profiles/developer_workstation.yaml
+

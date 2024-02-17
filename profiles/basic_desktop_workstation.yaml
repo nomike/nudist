@@ -1,0 +1,5 @@
+---
+- name: "Basic desktop workstation: Basic tools"
+  ansible.builtin.include_tasks: modules/basic_tools/index.yaml
+- name: "Basic desktop workstation: KeePass2"
+  ansible.builtin.include_tasks: modules/keepass2/index.yaml
