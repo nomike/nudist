@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=cq-editor
+Exec=/opt/miniforge3/bin/cq-editor
+Icon=/opt/miniforge3/share/cq-editor.png
+Type=Application
+Terminal=false

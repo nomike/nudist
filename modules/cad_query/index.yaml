@@ -1,0 +1,37 @@
+---
+- name: "Cad query: Install mamba"
+  ansible.builtin.include_tasks: modules/mamba/index.yaml
+
+- name: "Cad query: Install cq-editor"
+  ansible.builtin.shell: "mamba install -c conda-forge cq-editor"
+  args:
+    creates: "/opt/miniforge3/bin/cq-editor"
+
+- name: "Cad query: Link cq-editor to /usr/local/bin/cq-editor"
+  ansible.builtin.file:
+    src: "/opt/miniforge3/bin/cq-editor"
+    dest: "/usr/local/bin/cq-editor"
+    state: link
+    force: yes
+
+- name: "Cad queryt: Create cq-editor icon"
+  ansible.builtin.copy:
+    src: "cq-editor.png"
+    dest: "/opt/miniforge3/share/cq-editor.png"
+    owner: root
+    group: root
+    mode: "0644"
+  register: cq_editor_icon
+
+
+- name: "Cad queryt: Create cq-editor desktop entry"
+  ansible.builtin.copy:
+    src: "cq-editor.desktop"
+    dest: "/usr/share/applications/cq-editor.desktop"
+    owner: root
+    group: root
+    mode: "0644"
+
+- name: "Cad query: Update icon-cache"
+  ansible.builtin.shell: "update-icon-cache  /usr/share/icons/*"
+  when: cq_editor_icon.changed

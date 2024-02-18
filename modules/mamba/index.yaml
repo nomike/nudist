@@ -1,0 +1,20 @@
+---
+- name: "Mamba: Download the miniforge installation file"
+  ansible.builtin.get_url:
+    url: "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh"
+    dest: "/root/Miniforge3-Linux-x86_64.sh"
+    mode: "0755"
+    owner: root
+    group: root
+
+- name: "Mabma: Install minforge"
+  ansible.builtin.shell: "/root/Miniforge3-Linux-x86_64.sh -b -p /opt/miniforge3"
+  args:
+    creates: "/opt/miniforge3/bin/mamba"
+
+- name: "Mamba: Link mamba to /usr/share/bin/mamba"
+  ansible.builtin.file:
+    src: "/opt/miniforge3/bin/mamba"
+    dest: "/usr/local/bin/mamba"
+    state: link
+    force: yes
