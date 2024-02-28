@@ -1,3 +1,6 @@
 ---
 - name: "3D print workstation: cad query"
   ansible.builtin.include_tasks: modules/cad_query/index.yaml
+
+- name: "3D print workstation: stldim"
+  ansible.builtin.include_tasks: modules/stldim/index.yaml

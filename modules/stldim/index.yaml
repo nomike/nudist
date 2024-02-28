@@ -1,0 +1,19 @@
+---
+
+- name: "stldim: Install prerequisites"
+  ansible.builtin.apt:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+      - python3-stl
+      - python3-numpy
+      - python3-numpy-stl
+
+- name: "stldim: Install stldim"
+  ansible.builtin.copy:
+    src: "stldim"
+    dest: /usr/local/bin/stldim
+    owner: root
+    group: root
+    mode: "0755"
