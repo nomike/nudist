@@ -34,6 +34,7 @@
       - diffstat
       - diffutils
       - dos2unix
+      - dosfstools
       - dotnet-sdk-6.0
       - dotnet-sdk-7.0
       - easy-rsa
@@ -68,6 +69,8 @@
       - libreoffice-java-common
       - mc
       - mono-complete
+      - mplayer
+      - mtools
       - ncdu
       - net-tools
       - nmap
