@@ -51,7 +51,7 @@
       - gitk
       - gnome-browser-connector
       - gnome-shell-extension-manager
-      - gnome software
+      - gnome-software
       - gnome-tweaks
       - gnome-weather
       - google-android-platform-tools-installer
