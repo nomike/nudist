@@ -1,0 +1,12 @@
+---
+- name: "Qmk: Install dependencies"
+  ansible.builtin.apt:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+      - gcc-arm-none-eabi
+      - gcc-avr
+      - avrdude
+      - dfu-programmer
+      - dfu-util

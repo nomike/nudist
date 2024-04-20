@@ -1,3 +1,6 @@
 ---
-- name: "Developer workstation"
+- name: "Developer workstation: github client"
   ansible.builtin.include_tasks: modules/github_client/index.yaml
+
+- name: "Developer workstation: qmk"
+  ansible.builtin.include_tasks: modules/qmk/index.yaml
