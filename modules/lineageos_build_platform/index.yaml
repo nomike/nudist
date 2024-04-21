@@ -33,3 +33,12 @@
       - zlib1g-dev
     state: present
 
+- name: "lineageos_build_platform: Install libtinfo5"
+  ansible.builtin.apt:
+    deb: http://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.4-2_amd64.deb
+    state: present
+
+- name: "lineageos_build_platform: Install libncurses5"
+  ansible.builtin.apt:
+    deb: http://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libncurses5_6.4-2_amd64.deb
+    state: present
