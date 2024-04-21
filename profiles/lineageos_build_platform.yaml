@@ -1,0 +1,3 @@
+---
+- name: "LineageOS build platform"
+  ansible.builtin.include_tasks: modules/lineageos_build_platform/index.yaml
