@@ -82,7 +82,6 @@
       - openjdk-11-jre
       - openjdk-17-jdk
       - openjdk-17-jre
-      - openscad
       - openshot-qt
       - openssh-server
       - p7zip-full
