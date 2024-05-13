@@ -39,6 +39,8 @@
       - dotnet-sdk-7.0
       - easy-rsa
       - element-desktop
+      - exfat-fuse
+      - exfatprogs
       - feh
       - finger
       - flatpak
