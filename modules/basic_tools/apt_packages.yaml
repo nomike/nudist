@@ -70,6 +70,7 @@
       - landscape-common
       - libfuse2
       - libreoffice-java-common
+      - logstalgia
       - mc
       - mono-complete
       - mplayer
