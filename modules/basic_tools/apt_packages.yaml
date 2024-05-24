@@ -62,6 +62,7 @@
       - guake
       - hexchat
       - htop
+      - httping
       - inkscape
       - ipython3
       - jq
