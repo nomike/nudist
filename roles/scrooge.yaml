@@ -11,3 +11,5 @@
 - name: "Scrooge: 3D print workstation"
   ansible.builtin.include_tasks: profiles/3d_print_workstation.yaml
 
+- name: "Scrooge: esp_devstation"
+  ansible.builtin.include_tasks: profiles/esp_devstation.yaml

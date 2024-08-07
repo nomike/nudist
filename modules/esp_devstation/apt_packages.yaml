@@ -1,0 +1,13 @@
+---
+- name: "esp-devstation: Apt update"
+  ansible.builtin.apt:
+    cache_valid_time: 86400
+    update_cache: true
+
+- name: "esp-devstation: install apt packages"
+  ansible.builtin.apt:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+      - picocom

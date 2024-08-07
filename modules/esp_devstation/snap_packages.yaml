@@ -1,0 +1,7 @@
+---
+- name: "Basic tools: Install classic snap packages"
+  community.general.snap:
+    name:
+      - code-insiders
+    state: present
+    classic: true
