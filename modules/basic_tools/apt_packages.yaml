@@ -78,6 +78,7 @@
       - mono-complete
       - mplayer
       - mtools
+      - ncal
       - ncdu
       - net-tools
       - nmap
