@@ -74,6 +74,7 @@
       - libreoffice-java-common
       - logstalgia
       - mc
+      - minicom
       - mono-complete
       - mplayer
       - mtools
