@@ -90,6 +90,7 @@
       - openshot-qt
       - openssh-server
       - p7zip-full
+      - pavucontrol
       - pipx
       - playonlinux
       - plocate
