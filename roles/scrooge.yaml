@@ -13,3 +13,6 @@
 
 - name: "Scrooge: esp_devstation"
   ansible.builtin.include_tasks: profiles/esp_devstation.yaml
+
+- name: "Scrooge: electronics"
+  ansible.builtin.include_tasks: profiles/electronics.yaml

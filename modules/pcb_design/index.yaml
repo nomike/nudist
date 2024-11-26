@@ -1,0 +1,9 @@
+---
+- name: "bcp_design: Install kicad"
+  ansible.builtin.apt:
+    name: "{{ packages }}"
+  vars:
+    packages:
+      - kicad
+      - kicad-doc-en
+      - kicad-packages3d
