@@ -109,6 +109,7 @@
       - solaar
       - sox
       - ssh-askpass-gnome
+      - sshfs
       - syncthing
       - tcpdump
       - thefuck
