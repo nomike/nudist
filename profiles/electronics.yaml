@@ -1,3 +1,6 @@
 ---
 - name: "electronics: pcb_design"
   ansible.builtin.include_tasks: modules/pcb_design/index.yaml
+
+- name: "3D print workstation: blender"
+  ansible.builtin.include_tasks: modules/blender/index.yaml

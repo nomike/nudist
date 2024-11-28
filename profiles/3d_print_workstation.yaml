@@ -4,3 +4,6 @@
 
 - name: "3D print workstation: stldim"
   ansible.builtin.include_tasks: modules/stldim/index.yaml
+
+- name: "3D print workstation: blender"
+  ansible.builtin.include_tasks: modules/blender/index.yaml
