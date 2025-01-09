@@ -16,3 +16,6 @@
 
 - name: "Scrooge: electronics"
   ansible.builtin.include_tasks: profiles/electronics.yaml
+
+- name: "scrooge: howdy"
+  ansible.builtin.include_tasks: profiles/howdy.yaml
