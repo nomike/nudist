@@ -4,6 +4,8 @@
     name: "{{ packages }}"
   vars:
     packages:
+      - fritzing
       - kicad
       - kicad-doc-en
       - kicad-packages3d
+      - veroroute
