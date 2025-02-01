@@ -61,6 +61,7 @@
       - gparted
       - graphicsmagick-imagemagick-compat
       - guake
+      - guix
       - handbrake
       - handbrake-cli
       - hexchat
