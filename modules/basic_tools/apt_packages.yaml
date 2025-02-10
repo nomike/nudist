@@ -118,6 +118,7 @@
       - tcpdump
       - thefuck
       - tig
+      - trash-cli
       - ttf-mscorefonts-installer
       - udisks2
       - unzip
