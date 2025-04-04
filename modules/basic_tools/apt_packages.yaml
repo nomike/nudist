@@ -51,6 +51,7 @@
       - gddrescue
       - gimp
       - git
+      - git-email
       - gitk
       - gnome-browser-connector
       - gnome-shell-extension-manager
@@ -76,11 +77,13 @@
       - libfuse2
       - libimage-exiftool-perl
       - libreoffice-java-common
+      - libsecret-tools
       - logstalgia
       - mc
       - minicom
       - mono-complete
       - mplayer
+      - msmtp
       - mtools
       - ncal
       - ncdu
@@ -98,6 +101,7 @@
       - pipx
       - playonlinux
       - plocate
+      - printer-driver-gutenprint
       - pwgen
       - python3-autopep8
       - python3-crcmod
@@ -115,6 +119,7 @@
       - ssh-askpass-gnome
       - sshfs
       - syncthing
+      - system-config-printer
       - tcpdump
       - thefuck
       - tig
