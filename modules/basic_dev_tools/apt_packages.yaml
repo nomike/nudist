@@ -1,0 +1,13 @@
+---
+- name: "Basic dev tools: Apt update"
+  ansible.builtin.apt:
+    cache_valid_time: 86400
+    update_cache: true
+
+- name: "Basic dev tools: install apt packages"
+  ansible.builtin.apt:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+      - golang-go

@@ -4,3 +4,6 @@
 
 - name: "Developer workstation: qmk"
   ansible.builtin.include_tasks: modules/qmk/index.yaml
+
+- name: "Developer workstation: basic dev tools"
+  ansible.builtin.include_tasks: modules/basic_dev_tools/index.yaml
