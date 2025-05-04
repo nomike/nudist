@@ -120,6 +120,7 @@
       - ssh-askpass-gnome
       - sshfs
       - syncthing
+      - syncthing-gtk
       - system-config-printer
       - tcpdump
       - thefuck
